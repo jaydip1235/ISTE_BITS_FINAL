@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Jaydip Dey">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="Game,Snake,Entertainment,Play,fun">
+    <meta name="description" content="Play The snake Game and lets see how many points can you score!">
+    <meta name="og:title" property="og:title" content="Snake_Game">
+    <meta name="og:description" property="og:description" content="Play The snake Game and lets see how many points can you score!">
+    <title>Snake_Game</title>
+    <link rel="shortcut icon" type="image/png" href="pink_button2.png">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        #mycanvas{
+            background-image: url("board.jpg");
+            border:10px solid green;
+        }
+        #mycanvas2{
+            background : #060c21 ;
+        }
+        
+        body{
+            background : #060c21 ;
+            
+        }
+
+    </style>
+</head>
+<body>
+    <h2>
+        <span>S</span>
+        <span>n </span>
+        <span>a</span>
+        <span>k</span>
+        <span>e</span>
+     </h2>
+    <svg>
+    <path></path>
+    </svg>
+
+    <svg>
+        <path></path>
+     </svg>    
+
+     <a class="st" href="#" onclick = fun()>Start</a>
+     <a class="rul" href="#" onclick=fun2()>Rules</a> <for for="Rules"></for>
+    
+    <canvas id="mycanvas" width= 700px height= 730px></canvas>
+    <canvas id="mycanvas2" width= 700px height= 700px></canvas>
+    <audio id="myAudio1">
+        <source src="Game_over.mpeg" type="audio/ogg">
+
+      </audio>
+      <audio id="myAudio2" >
+        <source src="points.mp3" type="audio/ogg">
+
+      </audio>
+      <audio id="myAudio3" >
+        <source src="click.mp3" type="audio/ogg">
+
+      </audio>
+      
+      
+    <script src="sfun.js"></script>
+</body>
+</html>
